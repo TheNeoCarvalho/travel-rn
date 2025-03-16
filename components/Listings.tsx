@@ -13,10 +13,7 @@ const Listings = ({ listings }: Props) => {
 
     const renderItem: ListRenderItem<ListingsType> = ({ item }) => (
 
-        <Link href={{
-            pathname: "/listings/[id]",
-            params: { id: item.id }
-        }}>
+        <Link href={`/listings/${item.id}`}>
             <TouchableOpacity>
                 <View style={styles.item}>
                     <Image
