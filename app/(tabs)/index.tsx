@@ -1,11 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Colors from '@/constants/Colors';
-import { MaterialIcons } from '@expo/vector-icons';
+import { Ionicons, MaterialIcons } from '@expo/vector-icons';
 import { Stack } from 'expo-router';
-import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native';
-
+import { Image, ScrollView, StyleSheet, Text, TextInput, TouchableOpacity, View } from 'react-native';
+import { useHeaderHeight } from '@react-navigation/elements'
+import CategoryButtons from '@/components/CategoryButtons';
+import Listings from '@/components/Listings';
+import ListingData from '@/data/destinations.json';
+import GroupData from '@/data/groups.json';
+import GroupListings from '@/components/GroupListings';
 
 export default function HomeScreen() {
+
+  const [category, setCategory] = useState('Todos');
+  const headerHeight = useHeaderHeight();
+
+  const onCategoryChange = (category: string) => {
+    setCategory(category);
+  }
+
   return (
     <>
       <Stack.Screen
@@ -40,9 +53,62 @@ export default function HomeScreen() {
             </TouchableOpacity>
           )
         }} />
-      <View>
-        <Text>Teste</Text>
+      <View style={[styles.container, { paddingTop: headerHeight }]}>
+        <ScrollView showsVerticalScrollIndicator={false}>
+          <Text style={styles.title}>Explore os lugares mais bonitos do brasil!</Text>
+          <View style={styles.searchSectionWrapper}>
+            <View style={styles.searchBar}>
+              <MaterialIcons style={{ marginRight: 5 }} name='search' size={24} color={Colors.black} />
+              <TextInput placeholder='Buscar..' />
+            </View>
+            <TouchableOpacity style={styles.filterBtn} onPress={() => { }}>
+              <Ionicons name='options' size={24} color={Colors.black} />
+            </TouchableOpacity>
+          </View>
+          <CategoryButtons onCategoryChange={onCategoryChange} />
+          <Listings listings={ListingData} />
+          <GroupListings listings={GroupData} />
+        </ScrollView>
       </View>
     </>
   );
 }
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    paddingHorizontal: 20,
+    backgroundColor: '#f5f5f5',
+  },
+  title: {
+    fontSize: 28,
+    fontWeight: 'bold',
+    color: Colors.black,
+    marginTop: 10,
+  },
+  separator: {
+    marginVertical: 30,
+    height: 1,
+    width: '80%',
+  },
+  searchSectionWrapper: {
+    flexDirection: 'row',
+    marginVertical: 10,
+  },
+  searchBar: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: '#eee',
+    padding: 8,
+    borderRadius: 10,
+    alignItems: 'center',
+  },
+  filterBtn: {
+    backgroundColor: Colors.primary,
+    padding: 12,
+    marginLeft: 8,
+    borderRadius: 10,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
+});
