@@ -48,21 +48,21 @@ export default function HomeScreen() {
                   shadowRadius: 4,
                   elevation: 4
                 }}>
-                <MaterialIcons name="notifications" size={24} color={Colors.black} />
+                <MaterialIcons name="notifications" size={24} color={Colors.primary} />
               </TouchableOpacity>
             </TouchableOpacity>
           )
         }} />
       <View style={[styles.container, { paddingTop: headerHeight }]}>
         <ScrollView showsVerticalScrollIndicator={false}>
-          <Text style={styles.title}>Explore os lugares mais bonitos do brasil!</Text>
+          <Text style={styles.title}>Explore os lugares mais bonitos do Brasil!</Text>
           <View style={styles.searchSectionWrapper}>
             <View style={styles.searchBar}>
               <MaterialIcons style={{ marginRight: 5 }} name='search' size={24} color={Colors.black} />
               <TextInput placeholder='Buscar..' />
             </View>
             <TouchableOpacity style={styles.filterBtn} onPress={() => { }}>
-              <Ionicons name='options' size={24} color={Colors.black} />
+              <Ionicons name='options' size={24} color={Colors.white} />
             </TouchableOpacity>
           </View>
           <CategoryButtons onCategoryChange={onCategoryChange} />

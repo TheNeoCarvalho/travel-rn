@@ -11,33 +11,34 @@ type Props = {
 
 const Listings = ({ listings }: Props) => {
 
-    const renderItem: ListRenderItem<ListingsType> = ({ item }) => (
+    const renderItem: ListRenderItem<ListingsType> = ({ item }) => {
 
-        <Link href={`/listings/${item.id}`}>
-            <TouchableOpacity>
-                <View style={styles.item}>
-                    <Image
-                        source={{ uri: item.image }}
-                        style={styles.image} />
-                    <View style={styles.bookmark}>
-                        <Ionicons name="bookmark-outline" size={24} color={Colors.white} />
-                    </View>
-                    <Text numberOfLines={1} ellipsizeMode='tail' style={styles.itemText}>{item.name}</Text>
-                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                            <FontAwesome5 name="map-marker-alt" size={18} color={Colors.primary} />
-                            <Text style={{ marginLeft: 6 }}>{item.location}</Text>
+        return (
+            <TouchableOpacity style={{ marginHorizontal: 8 }}>
+                <Link href={`/listing/${item.id.toString()}`} >
+                    <View style={styles.item}>
+                        <Image
+                            source={{ uri: item.image }}
+                            style={styles.image} />
+                        <View style={styles.bookmark}>
+                            <Ionicons name="bookmark-outline" size={24} color={Colors.white} />
                         </View>
-                        <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                            <FontAwesome5 name="star" size={18} color={Colors.primary} />
-                            <Text style={{ marginLeft: 6 }}>{item.rating}</Text>
+                        <Text numberOfLines={1} ellipsizeMode='tail' style={styles.itemText}>{item.name}</Text>
+                        <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <FontAwesome5 name="map-marker-alt" size={18} color={Colors.primary} />
+                                <Text style={{ marginLeft: 6 }}>{item.location}</Text>
+                            </View>
+                            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                                <FontAwesome5 name="star" size={18} color={Colors.primary} />
+                                <Text style={{ marginLeft: 6 }}>{item.rating}</Text>
+                            </View>
                         </View>
                     </View>
-                </View>
+                </Link >
             </TouchableOpacity>
-        </Link>
-    )
-
+        )
+    }
 
     return (
         <View>
@@ -49,6 +50,7 @@ const Listings = ({ listings }: Props) => {
             />
         </View>
     )
+
 }
 
 export default Listings
