@@ -9,28 +9,28 @@
     {
         "id": "2",
         "name": "Aventura Brasil",
-        "image": "https://scontent.fjdo10-1.fna.fbcdn.net/v/t39.30808-6/294054040_550668350086571_5324404866538216279_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=m4zrxs72laUQ7kNvgG3-G2J&_nc_oc=AdibbjrwQ7PA7BrGB3QnvFVTVSvUhNUQ4MnV2AGeFRiMAXYhHR3RtdcWLMvz_VPbG_0&_nc_zt=23&_nc_ht=scontent.fjdo10-1.fna&_nc_gid=PZlSyW98B66ICE76Dqe-Ag&oh=00_AYEWeiBtqGyUBkCgZAA4E87kpti3OkQMUdNnq6py-1l32Q&oe=67DCDB81",
+        "image": "https://cdn.awsli.com.br/1109/1109216/logo/logo-retangular-2x1-r7auiwp9o4.png",
         "rating": 4.8,
         "reviews": 2100
     },
     {
         "id": "3",
         "name": "Trilhas & Destinos",
-        "image": "https://scontent.fjdo10-1.fna.fbcdn.net/v/t39.30808-6/294054040_550668350086571_5324404866538216279_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=m4zrxs72laUQ7kNvgG3-G2J&_nc_oc=AdibbjrwQ7PA7BrGB3QnvFVTVSvUhNUQ4MnV2AGeFRiMAXYhHR3RtdcWLMvz_VPbG_0&_nc_zt=23&_nc_ht=scontent.fjdo10-1.fna&_nc_gid=PZlSyW98B66ICE76Dqe-Ag&oh=00_AYEWeiBtqGyUBkCgZAA4E87kpti3OkQMUdNnq6py-1l32Q&oe=67DCDB81",
+        "image": "https://i.ytimg.com/vi/uGkfYjL95y8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLD_TQ55y7YjjPBK4N9XrChjh2RQYg",
         "rating": 4.6,
         "reviews": 980
     },
     {
         "id": "4",
         "name": "Viagem Perfeita",
-        "image": "https://scontent.fjdo10-1.fna.fbcdn.net/v/t39.30808-6/294054040_550668350086571_5324404866538216279_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=m4zrxs72laUQ7kNvgG3-G2J&_nc_oc=AdibbjrwQ7PA7BrGB3QnvFVTVSvUhNUQ4MnV2AGeFRiMAXYhHR3RtdcWLMvz_VPbG_0&_nc_zt=23&_nc_ht=scontent.fjdo10-1.fna&_nc_gid=PZlSyW98B66ICE76Dqe-Ag&oh=00_AYEWeiBtqGyUBkCgZAA4E87kpti3OkQMUdNnq6py-1l32Q&oe=67DCDB81",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZaCqUyZFY9G31zqbuEkdpDG8FMJH8kBPCfA&s",
         "rating": 4.9,
         "reviews": 3200
     },
     {
         "id": "5",
         "name": "Roteiros Especiais",
-        "image": "https://scontent.fjdo10-1.fna.fbcdn.net/v/t39.30808-6/294054040_550668350086571_5324404866538216279_n.png?_nc_cat=108&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=m4zrxs72laUQ7kNvgG3-G2J&_nc_oc=AdibbjrwQ7PA7BrGB3QnvFVTVSvUhNUQ4MnV2AGeFRiMAXYhHR3RtdcWLMvz_VPbG_0&_nc_zt=23&_nc_ht=scontent.fjdo10-1.fna&_nc_gid=PZlSyW98B66ICE76Dqe-Ag&oh=00_AYEWeiBtqGyUBkCgZAA4E87kpti3OkQMUdNnq6py-1l32Q&oe=67DCDB81",
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQmBn75RY5fudHfcCl46StIxw54rH7NmDFoqw&s",
         "rating": 4.5,
         "reviews": 750
     }

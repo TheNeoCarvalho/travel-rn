@@ -59,7 +59,7 @@ export default function HomeScreen() {
           <View style={styles.searchSectionWrapper}>
             <View style={styles.searchBar}>
               <MaterialIcons style={{ marginRight: 5 }} name='search' size={24} color={Colors.black} />
-              <TextInput placeholder='Buscar..' />
+              <TextInput style={{ width: '90%' }} placeholder='Buscar..' />
             </View>
             <TouchableOpacity style={styles.filterBtn} onPress={() => { }}>
               <Ionicons name='options' size={24} color={Colors.white} />
